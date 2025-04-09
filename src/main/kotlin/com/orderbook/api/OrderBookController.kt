@@ -1,16 +1,15 @@
 package com.orderbook.api
 
 import com.orderbook.core.OrderBook
-import com.orderbook.core.OrderBookLevel
 import com.orderbook.exception.ApiError
 import com.orderbook.exception.OrderBookException
 import com.orderbook.model.*
 import io.vertx.core.Vertx
+import io.vertx.core.json.Json
+import io.vertx.core.json.JsonObject
 import io.vertx.ext.web.Router
 import io.vertx.ext.web.RoutingContext
 import io.vertx.ext.web.handler.BodyHandler
-import io.vertx.core.json.Json
-import io.vertx.core.json.JsonObject
 import java.util.*
 
 class OrderBookController(
